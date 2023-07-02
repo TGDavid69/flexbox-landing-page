@@ -41,24 +41,26 @@ margin: 0;
 }
 
 .first-left,
-.first-right {
-    width: 500px;
+.first-right { 
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    justify-content: space-between;
+    width: 500px;
 }
 
 .first-left button {
-    margin-top: auto;
-    align-self: flex-start; /* hooray for google */
     padding: 10px;
     color: white;
     font-size: 16px;
     font-weight: 900;
     border: 1px solid white; /* hooray for google */
     border-radius: 0.5em;
-
 }
+
+.first-left a {
+    align-self: flex-start;
+}
+
 
 button:hover { /* hooray for google */
     background-color: white;
@@ -85,7 +87,48 @@ button {
 }
 
 .anime {
+    align-self: flex-end;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.second {
+    padding: 30px;
     display: flex;
-    border: 1px solid black;
-    margin-left: auto;
+    justify-content: center;
+}
+
+.info {
+    margin-top: 10px;
+    font-size: 36px;
+    font-weight: 1000;
+    color: #1f2937;
+    text-align: center;
+    padding: 30px;
+}
+
+.info-cont {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rounded {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882f6;
+    border-radius: 16px;
+    margin-bottom: 6px;
+}
+
+.jibberish {
+    width: 140px;
+    font-weight: 600;
+}
+
+.second .content {
+    display: flex;
 }
